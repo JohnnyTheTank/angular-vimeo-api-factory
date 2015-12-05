@@ -100,7 +100,7 @@ vimeoFactory.getVideosFromTag({
 });
 ```
 
-## Vimeo Graph JSON API
+## Vimeo JSON API
 
 * docs: https://developer.vimeo.com/api/endpoints/
 * api playground: https://developer.vimeo.com/api/playground/
