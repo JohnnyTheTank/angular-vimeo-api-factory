@@ -86,7 +86,7 @@ vimeoFactory.getVideosFromCategory({
 ```js
 // parameters: https://developer.vimeo.com/api/endpoints/tags#/{word}/videos
 vimeoFactory.getVideosFromTag({
-    tag:"<CATEGORY_NAME>",
+    tag:"<TAG_NAME>",
     per_page:"<ITEMS_PER_PAGE>", // (optional) default: 20
     page:"<PAGE_NUMBER>", // (optional)
     query:"<QUERY>", // (optional)
