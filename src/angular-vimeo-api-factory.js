@@ -95,61 +95,41 @@ angular.module("jtt_vimeo", [])
 
         this.getNew = function (_type, _params) {
 
-            var defaultLimit = 20;
-
             var vimeoSearchData = {
-                object: {},
+                object: {
+                    access_token: _params.access_token,
+                },
                 url: "",
             };
 
             switch (_type) {
                 case "videosFromChannel":
-                    vimeoSearchData.object = {
-                        access_token: _params.access_token,
-                        per_page: _params.per_page || defaultLimit
-                    };
-
                     vimeoSearchData = this.fillDataInObjectByList(vimeoSearchData, _params, [
-                        'page', 'query', 'filter', 'filter_embeddable', 'sort', 'direction'
+                        'page', 'query', 'filter', 'filter_embeddable', 'sort', 'direction', 'per_page'
                     ]);
 
                     vimeoSearchData.url = this.getApiBaseUrl() + "channels/" + _params.channel + "/videos";
                     break;
 
                 case "videosFromCategory":
-                    vimeoSearchData.object = {
-                        access_token: _params.access_token,
-                        per_page: _params.per_page || defaultLimit
-                    };
-
-                    vimeoSearchData = this.fillDataInObjectByList(vimeoSearchData, _params, [
-                        'page', 'query', 'filter', 'filter_embeddable', 'sort', 'direction'
+                     vimeoSearchData = this.fillDataInObjectByList(vimeoSearchData, _params, [
+                        'page', 'query', 'filter', 'filter_embeddable', 'sort', 'direction', 'per_page'
                     ]);
 
                     vimeoSearchData.url = this.getApiBaseUrl() + "categories/" + _params.category + "/videos";
                     break;
 
                 case "videosFromTag":
-                    vimeoSearchData.object = {
-                        access_token: _params.access_token,
-                        per_page: _params.per_page || defaultLimit
-                    };
-
                     vimeoSearchData = this.fillDataInObjectByList(vimeoSearchData, _params, [
-                        'page', 'query', 'sort', 'direction'
+                        'page', 'query', 'sort', 'direction', 'per_page'
                     ]);
 
                     vimeoSearchData.url = this.getApiBaseUrl() + "tags/" + _params.tag + "/videos";
                     break;
 
                 case "videosFromUser":
-                    vimeoSearchData.object = {
-                        access_token: _params.access_token,
-                        per_page: _params.per_page || defaultLimit
-                    };
-
                     vimeoSearchData = this.fillDataInObjectByList(vimeoSearchData, _params, [
-                        'page', 'query', 'filter', 'filter_embeddable', 'sort', 'direction'
+                        'page', 'query', 'filter', 'filter_embeddable', 'sort', 'direction', 'per_page'
                     ]);
 
                     vimeoSearchData.url = this.getApiBaseUrl() + "users/" + _params.user + "/videos";

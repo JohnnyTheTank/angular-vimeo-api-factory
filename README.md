@@ -15,7 +15,7 @@ Author: Jonathan Hornung ([JohnnyTheTank](https://github.com/JohnnyTheTank))
     <script src="bower_components/angular-vimeo-api-factory/src/angular-vimeo-api-factory.js"></script>
     ```
 
-4. Use the factory `vimeoFactory`.
+4. Use the factory `vimeoFactory`
 
 
 ### factory methods
@@ -27,7 +27,7 @@ Author: Jonathan Hornung ([JohnnyTheTank](https://github.com/JohnnyTheTank))
 // parameters: https://developer.vimeo.com/api/endpoints/channels#/{channel_id}/videos
 vimeoFactory.getVideosFromChannel({
     channel:"<CHANNEL_NAME>",
-    per_page:"<ITEMS_PER_PAGE>", // (optional) default: 20
+    per_page:"<ITEMS_PER_PAGE>", // (optional) valid values: 1-50 | default: 25
     page:"<PAGE_NUMBER>", // (optional)
     query:"<QUERY>", // (optional)
     filter:"<FILTER>", // (optional)
@@ -47,7 +47,7 @@ vimeoFactory.getVideosFromChannel({
 // parameters: https://developer.vimeo.com/api/endpoints/users#/{user_id}/videos
 vimeoFactory.getVideosFromUser({
     user:"<USER_NAME>",
-    per_page:"<ITEMS_PER_PAGE>", // (optional) default: 20
+    per_page:"<ITEMS_PER_PAGE>", // (optional) valid values: 1-50 | default: 25
     page:"<PAGE_NUMBER>", // (optional)
     query:"<QUERY>", // (optional)
     filter:"<FILTER>", // (optional)
@@ -67,7 +67,7 @@ vimeoFactory.getVideosFromUser({
 // parameters: https://developer.vimeo.com/api/endpoints/categories#/{category}/videos
 vimeoFactory.getVideosFromCategory({
     category:"<CATEGORY_NAME>",
-    per_page:"<ITEMS_PER_PAGE>", // (optional) default: 20
+    per_page:"<ITEMS_PER_PAGE>", // (optional) valid values: 1-50 | default: 25
     page:"<PAGE_NUMBER>", // (optional)
     query:"<QUERY>", // (optional)
     filter:"<FILTER>", // (optional)
@@ -87,7 +87,7 @@ vimeoFactory.getVideosFromCategory({
 // parameters: https://developer.vimeo.com/api/endpoints/tags#/{word}/videos
 vimeoFactory.getVideosFromTag({
     tag:"<TAG_NAME>",
-    per_page:"<ITEMS_PER_PAGE>", // (optional) default: 20
+    per_page:"<ITEMS_PER_PAGE>", // (optional) valid values: 1-50 | default: 25
     page:"<PAGE_NUMBER>", // (optional)
     query:"<QUERY>", // (optional)
     sort:"<SORT>", // (optional)
