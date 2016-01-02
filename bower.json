@@ -1,7 +1,7 @@
 {
   "name": "angular-vimeo-api-factory",
   "description": "angularjs factory for vimeo json rest api requests",
-  "version": "0.1.2",
+  "version": "0.5.0",
   "main": "Gruntfile.js",
   "authors": [
     "Jonathan Hornung"
@@ -24,8 +24,5 @@
     "bower_components",
     "test",
     "tests"
-  ],
-  "dependencies": {
-    "angular": "*"
-  }
+  ]
 }
