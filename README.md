@@ -11,11 +11,17 @@ Author: Jonathan Hornung ([JohnnyTheTank](https://github.com/JohnnyTheTank))
 2. Add `jtt_vimeo` to your application's module dependencies.
 3. Include dependencies in your HTML.
     1. When using bower:
-    <br>`<script src="bower_components/angular-vimeo-api-factory/src/angular-vimeo-api-factory.min.js"></script>`
+    ```html
+    <script src="bower_components/angular-vimeo-api-factory/src/angular-vimeo-api-factory.min.js"></script>
+    ```
     2. When using npm:
-    <br>`<script src="node_modules/angular-vimeo-api-factory/src/angular-vimeo-api-factory.min.js"></script>`
+    ```html
+    <script src="node_modules/angular-vimeo-api-factory/src/angular-vimeo-api-factory.min.js"></script>
+    ```
     3. when using downloaded files
-    <br>`<script src="angular-vimeo-api-factory.min.js"></script>`
+    ```html
+    <script src="angular-vimeo-api-factory.min.js"></script>
+    ```
 4. Use the factory `vimeoFactory`
 
 
