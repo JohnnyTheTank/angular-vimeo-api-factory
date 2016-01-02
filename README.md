@@ -14,10 +14,12 @@ Author: Jonathan Hornung ([JohnnyTheTank](https://github.com/JohnnyTheTank))
     ```html
     <script src="bower_components/angular-vimeo-api-factory/src/angular-vimeo-api-factory.min.js"></script>
     ```
+
     2. When using npm:
     ```html
     <script src="node_modules/angular-vimeo-api-factory/src/angular-vimeo-api-factory.min.js"></script>
     ```
+
     3. when using downloaded files
     ```html
     <script src="angular-vimeo-api-factory.min.js"></script>
