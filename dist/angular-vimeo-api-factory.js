@@ -1,5 +1,5 @@
 
-/*! angular-vimeo-api-factory v0.5.0 (02-01-2016) by Jonathan Hornung */
+/*! angular-vimeo-api-factory v0.5.1 (03-01-2016) by Jonathan Hornung */
 "use strict";
 
 /**
