@@ -6,7 +6,7 @@ app.controller('controller', ['$scope', 'vimeoFactory', function($scope, vimeoFa
     vimeoFactory.getVideosFromChannel({
         channel:"nicetype",
         access_token:_access_token
-    }).success(function(_data){
+    }).then(function(_data){
         console.info("videos from channel", _data);
     });
 
@@ -14,7 +14,7 @@ app.controller('controller', ['$scope', 'vimeoFactory', function($scope, vimeoFa
         category:"cameratechniques",
         //per_page:2,
         access_token:_access_token
-    }).success(function(_data){
+    }).then(function(_data){
         console.info("videos from category", _data);
     });
 
@@ -22,7 +22,7 @@ app.controller('controller', ['$scope', 'vimeoFactory', function($scope, vimeoFa
         tag:"fcbayern",
         per_page:2,
         access_token:_access_token
-    }).success(function(_data){
+    }).then(function(_data){
         console.info("videos from tag", _data);
     });
 
@@ -30,7 +30,7 @@ app.controller('controller', ['$scope', 'vimeoFactory', function($scope, vimeoFa
         user:"alexanderengel",
         per_page:2,
         access_token:_access_token
-    }).success(function(_data){
+    }).then(function(_data){
         console.info("videos from user", _data);
     });
 

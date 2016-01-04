@@ -42,9 +42,9 @@ vimeoFactory.getVideosFromChannel({
     sort:"<SORT>", // (optional)
     direction:"<DIRECTION>", // (optional)
     access_token:"<ACCESS_TOKEN>"
-}).success(function(_data){
+}).then(function(_data){
     //on success
-}).error(function (_data) {
+}).catch(function (_data) {
     //on error
 });
 ```
@@ -62,9 +62,9 @@ vimeoFactory.getVideosFromUser({
     sort:"<SORT>", // (optional)
     direction:"<DIRECTION>", // (optional)
     access_token:"<ACCESS_TOKEN>"
-}).success(function(_data){
+}).then(function(_data){
     //on success
-}).error(function (_data) {
+}).catch(function (_data) {
     //on error
 });
 ```
@@ -82,9 +82,9 @@ vimeoFactory.getVideosFromCategory({
     sort:"<SORT>", // (optional)
     direction:"<DIRECTION>", // (optional)
     access_token:"<ACCESS_TOKEN>"
-}).success(function(_data){
+}).then(function(_data){
     //on success
-}).error(function (_data) {
+}).catch(function (_data) {
     //on error
 });
 ```
@@ -100,9 +100,9 @@ vimeoFactory.getVideosFromTag({
     sort:"<SORT>", // (optional)
     direction:"<DIRECTION>", // (optional)
     access_token:"<ACCESS_TOKEN>"
-}).success(function(_data){
+}).then(function(_data){
     //on success
-}).error(function (_data) {
+}).catch(function (_data) {
     //on error
 });
 ```
