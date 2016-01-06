@@ -1,12 +1,11 @@
-
-/*! angular-vimeo-api-factory v0.5.1 (03-01-2016) by Jonathan Hornung */
-"use strict";
-
 /**
- @author Jonathan Hornung (https://github.com/JohnnyTheTank)
- @url https://github.com/JohnnyTheTank/angular-vimeo-api-factory
- @licence MIT
- */
+    @name: angular-vimeo-api-factory 
+    @version: 0.5.2 (06-01-2016) 
+    @author: Jonathan Hornung 
+    @url: https://github.com/JohnnyTheTank/angular-vimeo-api-factory#readme 
+    @license: MIT
+*/
+"use strict";
 
 angular.module("jtt_vimeo", [])
     .factory('vimeoFactory', ['$http', 'vimeoSearchDataService', function ($http, vimeoSearchDataService) {

@@ -1,6 +1,6 @@
 {
   "name": "angular-vimeo-api-factory",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "angularjs factory for vimeo json rest api requests",
   "main": "dist/angular-vimeo-api-factory.js",
   "scripts": {

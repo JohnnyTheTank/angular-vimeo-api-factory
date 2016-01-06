@@ -1,32 +1,34 @@
 module.exports = function(grunt) {
 
+    var banner = '/**\n    @name: <%= pkg.name %> \n    @version: <%= pkg.version %> (<%= grunt.template.today("dd-mm-yyyy") %>) \n    @author: <%= pkg.author %> \n    @url: <%= pkg.homepage %> \n    @license: <%= pkg.license %>\n*/\n';
+
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         uglify: {
             js: {
                 files : {
-                    'dist/angular-vimeo-api-factory.min.js' : ['src/angular-vimeo-api-factory.js']
+                    'dist/angular-vimeo-api-factory.min.js' : ['src/*.js']
                 }
             },
             options: {
-                banner: '\n/*! <%= pkg.name %> v<%= pkg.version %> (<%= grunt.template.today("dd-mm-yyyy") %>) by <%= pkg.author %> */\n',
+                banner: banner,
             }
         },
         concat: {
             options: {
                 separator: ';',
-                banner: '\n/*! <%= pkg.name %> v<%= pkg.version %> (<%= grunt.template.today("dd-mm-yyyy") %>) by <%= pkg.author %> */\n',
+                banner: banner,
             },
             dist: {
                 files : {
-                    'dist/angular-vimeo-api-factory.js' : ['src/angular-vimeo-api-factory.js']
+                    'dist/angular-vimeo-api-factory.js' : ['src/*.js']
                 }
             },
         },
         watch: {
             minifiyJs: {
                 files: [
-                    'src/angular-vimeo-api-factory.js'
+                    'src/*.js'
                 ],
                 tasks: ['uglify', 'concat'],
                 options: {
