@@ -2,7 +2,7 @@
   "name": "angular-vimeo-api-factory",
   "version": "0.5.1",
   "description": "angularjs factory for vimeo json rest api requests",
-  "main": "Gruntfile.js",
+  "main": "dist/angular-vimeo-api-factory.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
