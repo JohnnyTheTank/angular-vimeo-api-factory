@@ -1,5 +1,8 @@
 **angular-vimeo-api-factory** is an angularjs module with a vimeo api factory.
 
+[![npm version](https://badge.fury.io/js/angular-vimeo-api-factory.png)](https://badge.fury.io/js/angular-vimeo-api-factory)
+[![Bower version](https://badge.fury.io/bo/angular-vimeo-api-factory.png)](https://badge.fury.io/bo/angular-vimeo-api-factory)
+
 Author: Jonathan Hornung ([JohnnyTheTank](https://github.com/JohnnyTheTank))
 
 ## Usage
