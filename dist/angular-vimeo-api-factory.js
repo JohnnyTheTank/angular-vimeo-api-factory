@@ -1,6 +1,6 @@
 /**
     @name: angular-vimeo-api-factory 
-    @version: 0.5.2 (06-01-2016) 
+    @version: 0.5.2 (20-02-2016) 
     @author: Jonathan Hornung 
     @url: https://github.com/JohnnyTheTank/angular-vimeo-api-factory#readme 
     @license: MIT
@@ -17,9 +17,7 @@ angular.module("jtt_vimeo", [])
             if(!_params.channel) {
                 return false;
             }
-
             var searchData = vimeoSearchDataService.getNew("videosFromChannel", _params);
-
             return $http({
                     method: 'GET',
                     url: searchData.url,
@@ -33,9 +31,7 @@ angular.module("jtt_vimeo", [])
             if(!_params.category) {
                 return false;
             }
-
             var searchData = vimeoSearchDataService.getNew("videosFromCategory", _params);
-
             return $http({
                     method: 'GET',
                     url: searchData.url,
@@ -86,7 +82,7 @@ angular.module("jtt_vimeo", [])
         this.fillDataInObjectByList = function (_object, _params, _list) {
 
             angular.forEach(_list, function (value, key) {
-                if (typeof _params[value] !== "undefined") {
+                if (angular.isDefined(_params[value])) {
                     _object.object[value] = _params[value];
                 }
             });

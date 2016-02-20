@@ -10,9 +10,7 @@ angular.module("jtt_vimeo", [])
             if(!_params.channel) {
                 return false;
             }
-
             var searchData = vimeoSearchDataService.getNew("videosFromChannel", _params);
-
             return $http({
                     method: 'GET',
                     url: searchData.url,
@@ -26,9 +24,7 @@ angular.module("jtt_vimeo", [])
             if(!_params.category) {
                 return false;
             }
-
             var searchData = vimeoSearchDataService.getNew("videosFromCategory", _params);
-
             return $http({
                     method: 'GET',
                     url: searchData.url,
@@ -79,7 +75,7 @@ angular.module("jtt_vimeo", [])
         this.fillDataInObjectByList = function (_object, _params, _list) {
 
             angular.forEach(_list, function (value, key) {
-                if (typeof _params[value] !== "undefined") {
+                if (angular.isDefined(_params[value])) {
                     _object.object[value] = _params[value];
                 }
             });
